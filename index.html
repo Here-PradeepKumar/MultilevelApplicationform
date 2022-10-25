@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-level Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="page" class="site">
+    <div class="container">
+        <div class="form-box">
+            <div class="progress">
+                <div class="logo"><a href="/"><span>.web</span>design</a></div>
+                <ul class="progress-steps">
+                    <li class="step active">
+                        <span>1</span>
+                        <p>Personal<br><span>25 secs to complete</span></p>
+                    </li>
+                    <li class="step">
+                        <span>2</span>
+                        <p>Contact<br><span>60 secs to complete</span></p>
+                    </li>
+                    <li class="step">
+                        <span>3</span>
+                        <p>Security<br><span>30 secs to complete</span></p>
+                    </li>
+                </ul>
+            </div>
+            <form action="">
+                <div class="form-one form-step active">
+                    <div class="bg-svg"></div>
+                    <h2>Personal Information</h2>
+                    <p>Enter your Personal Information Correctly</p>
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" placeholder="John">
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" placeholder="Paul">
+                    </div>
+                    <div class="birth">
+                        <label for="">Date of Birth</label>
+                       
+                        <div class="grouping">
+                            <input type="text" pattern="[0-9]" name="day" min="0"max="31"placeholder="DD">
+                            <input type="text" pattern="[0-9]" name="month" min="1"max="12"placeholder="MM">
+                            <input type="text" pattern="[0-9]" name="year" min="1900"max="2022"placeholder="YYYY">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-two form-step">
+                    <div class="bg-svg"></div>
+                    <h2>Contact Details</h2>
+                    <div><label for="">Phone</label><input type="tel" placeholder="+91 xxx"></div>
+                    <div><label for="">Address</label><input type="text" placeholder="Street Address"></div>
+                    <div><input type="text" placeholder="Building"></div>
+                    <div><label for="">City</label><input type="text" placeholder="City"></div>
+                    <div><label for="">State</label><input type="text" placeholder="State"></div>
+                    <div><label for="">ZipCode</label><input type="text" placeholder="State"></div>
+                    <div><label for="">Country</label>
+                        <select name="country" id="country">
+                        <option value="">Select one</option>
+                        <option value="Ind">India</option>
+                       </select>
+                    </div>
+                </div>
+                <div class="form-three form-step">
+                    <div class="bg-svg"></div>
+                        <h2>Security</h2>
+                        <div><label for="">Email</label>
+                            <input type="email" placeholder="example@mail.com">
+                        </div>
+                        <div><label for="">Username</label>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div><label for="">Password</label>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Confirm Password">
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" >
+                            <label>Accept T&C</label>
+                        </div>
+                </div>
+                <div class="btn-group">
+                   <button type="button"class="btn-prev" disabled>Back</button>
+                   <button type="button"class="btn-next">Next Step</button>
+                   <button type="button"class="btn-submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+   </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
